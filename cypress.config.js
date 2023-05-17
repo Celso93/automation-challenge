@@ -3,7 +3,7 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   e2e: {
     baseUrl: 'https://automation-sandbox-python-mpywqjbdza-uc.a.run.app',
-    defaultCommandTimeout: 7000,
+    defaultCommandTimeout: 5000,
     watchForFileChanges: false,
     reporter: 'cypress-mochawesome-reporter',
     reporterOptions: {
@@ -11,7 +11,7 @@ module.exports = defineConfig({
       reportPageTitle: 'Custom Report',
       embeddedScreenshots: true,
       inlineAssets: true,
-      ignoreVideos: true,
+      ignoreVideos: false,
       saveAllAttempts: false,
     },
     setupNodeEvents(on, config) {
