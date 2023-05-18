@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "UI": "npx cypress open",
     "chrome:headless": "npx cypress run --browser chrome cypress-mochawesome-reporter"
   },
   "author": "",

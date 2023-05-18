@@ -15,9 +15,14 @@ npm install --save-dev
 ```
 
 ## Running Tests
-To run the tests, use the following command:
+To run the tests in chrome headless, use the following command:
 ```bash
 npm run chrome:headless
+```
+
+Or, you can open the UI with this command:
+```bash
+npm run UI
 ```
 
 This command will run in headless mode with chrome browser, and at the end, it will generate a report in the cypress/support directory.
